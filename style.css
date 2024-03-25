@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.main {
+    height: 644px;
+    /* height: 80vh; */
+    background-image: url("Assest/img/bg.jpg");
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    /* height: 80vh; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.74;
+}
+
+nav {
+    height: 62px;
+    /* max-width: calc(83.33333333333334% - 6rem); */
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav img {
+    color: red;
+    width: 9.25rem;
+    height: 2.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    text-align: center;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.separation {
+    width: 99.9vw;
+    height: 8px;
+    background: rgb(35, 35, 35);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: white;
+    border-style: solid;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 8px 18px;
+    font-size: 24px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    font-weight: 400;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgb(229, 9, 20);
+    color: white;
+    cursor: pointer;
+}
+
+.main input,
+.faq input {
+    padding: 15px 128px 15px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    background-color: rgba(23, 23, 23, 0.5);
+    color: white;
+}
+
+.first {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    position: relative;
+    width: 555px;
+    z-index: 1;
+}
+
+.secImg video {
+    position: absolute;
+    top: max(0px, 70px);
+    left: 65px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0px;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.faq {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 10px;
+}
+
+.faq h2 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 2px;
+    padding: 24px;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    background-color: rgb(75, 75, 75);
+}
+
+.faq h3 {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faq-btns {
+    margin-top: 24px;
+    margin-bottom: 75px;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+.footer a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media screen and (max-width:1300px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        left: 34px;
+        width: 235px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    footer {
+        max-width: 90vw;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 32px;
+    }
+
+    section.first>div :nth-child(2) {
+        font-size: 18px;
+    }
+}
